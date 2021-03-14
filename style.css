@@ -1,0 +1,22 @@
+*{
+    margin: auto;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.bigger_input{
+    width: 75px;
+    background-color: lightskyblue;
+}
+
+.smaller_input{
+    width: 50px;
+    background-color: lightblue;
+}
+
+.table_1{
+    padding: 15px;
+}
