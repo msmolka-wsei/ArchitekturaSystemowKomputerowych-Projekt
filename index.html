@@ -7,36 +7,45 @@
     </head>
     <body>
         <hr>
+            <h3>1. Wpisz wartości rejestrów</h3>
+            <div id="first_container">
+                <p><span>AX</span> <input type="text" name="ax" id="ax" class="bigger_input hex" onblur="duplicate2()">   <span>AH</span> <input type="text" name="ah" id="ah" class="smaller_input hex" onblur="duplicate()">   <span>AL</span> <input type="text" name="al" id="al" class="smaller_input hex" onblur="duplicate()"></p>
+                <p><span>BX</span> <input type="text" name="bx" id="bx" class="bigger_input hex" onblur="duplicate2()">   <span>BH</span> <input type="text" name="bh" id="bh" class="smaller_input hex" onblur="duplicate()">   <span>BL</span> <input type="text" name="bl" id="bl" class="smaller_input hex" onblur="duplicate()"></p>
+                <p><span>CX</span> <input type="text" name="cx" id="cx" class="bigger_input hex" onblur="duplicate2()">   <span>CH</span> <input type="text" name="ch" id="ch" class="smaller_input hex" onblur="duplicate()">   <span>CL</span> <input type="text" name="cl" id="cl" class="smaller_input hex" onblur="duplicate()"></p>
+                <p><span>DX</span> <input type="text" name="dx" id="dx" class="bigger_input hex" onblur="duplicate2()">   <span>DH</span> <input type="text" name="dh" id="dh" class="smaller_input hex" onblur="duplicate()">   <span>DL</span> <input type="text" name="dl" id="dl" class="smaller_input hex" onblur="duplicate()"></p>
             
-            <p><span>AX</span> <input type="text" name="ax" id="ax" class="bigger_input hex" onblur="duplicate2()">   <span>AH</span> <input type="text" name="ah" id="ah" class="smaller_input hex" onblur="duplicate()">   <span>AL</span> <input type="text" name="al" id="al" class="smaller_input hex" onblur="duplicate()"></p>
-            <p><span>BX</span> <input type="text" name="bx" id="bx" class="bigger_input hex" onblur="duplicate2()">   <span>BH</span> <input type="text" name="bh" id="bh" class="smaller_input hex" onblur="duplicate()">   <span>BL</span> <input type="text" name="bl" id="bl" class="smaller_input hex" onblur="duplicate()"></p>
-            <p><span>CX</span> <input type="text" name="cx" id="cx" class="bigger_input hex" onblur="duplicate2()">   <span>CH</span> <input type="text" name="ch" id="ch" class="smaller_input hex" onblur="duplicate()">   <span>CL</span> <input type="text" name="cl" id="cl" class="smaller_input hex" onblur="duplicate()"></p>
-            <p><span>DX</span> <input type="text" name="dx" id="dx" class="bigger_input hex" onblur="duplicate2()">   <span>DH</span> <input type="text" name="dh" id="dh" class="smaller_input hex" onblur="duplicate()">   <span>DL</span> <input type="text" name="dl" id="dl" class="smaller_input hex" onblur="duplicate()"></p>
-
-            <table>
-                <tr>
-                    <td class="table_1">
-                        <p><input type="radio" name="register1" value="rax1" id="rax1"> <span>AX</span> <input type="radio" name="register1" value="rah1" id="rah1"> <span>AH</span> <input type="radio" name="register1" value="ral1" id="ral1"> <span>AL</span></p>    
-                        <p><input type="radio" name="register1" value="rbx1" id="rbx1"> <span>BX</span> <input type="radio" name="register1" value="rbh1" id="rbh1"> <span>BH</span> <input type="radio" name="register1" value="rbl1" id="rbl1"> <span>BL</span></p>
-                        <p><input type="radio" name="register1" value="rcx1" id="rcx1"> <span>CX</span> <input type="radio" name="register1" value="rch1" id="rch1"> <span>CH</span> <input type="radio" name="register1" value="rcl1" id="rcl1"> <span>CL</span></p>
-                        <p><input type="radio" name="register1" value="rdx1" id="rdx1"> <span>DX</span> <input type="radio" name="register1" value="rdh1" id="rdh1"> <span>DH</span> <input type="radio" name="register1" value="rdl1" id="rdl1"> <span>DL</span></p>
-                    </td>
-                    <td class="table_1">
-                        <p><input type="radio" name="register2" value="rax2" id="rax2"> <span>AX</span> <input type="radio" name="register2" value="rah2" id="rah2"> <span>AH</span> <input type="radio" name="register2" value="ral2" id="ral2"> <span>AL</span></p>
-                        <p><input type="radio" name="register2" value="rbx2" id="rbx2"> <span>BX</span> <input type="radio" name="register2" value="rbh2" id="rbh2"> <span>BH</span> <input type="radio" name="register2" value="rbl2" id="rbl2"> <span>BL</span></p>
-                        <p><input type="radio" name="register2" value="rcx2" id="rcx2"> <span>CX</span> <input type="radio" name="register2" value="rch2" id="rch2"> <span>CH</span> <input type="radio" name="register2" value="rcl2" id="rcl2"> <span>CL</span></p>
-                        <p><input type="radio" name="register2" value="rdx2" id="rdx2"> <span>DX</span> <input type="radio" name="register2" value="rdh2" id="rdh2"> <span>DH</span> <input type="radio" name="register2" value="rdl2" id="rdl2"> <span>DL</span></p>
-                    </td>
-                </tr>
-            </table>
-                <input type="button" onclick="random_variables()" value="rand">
-                <input type="button" onclick="zero()" value="zerowanie">
-                <input type="button" onclick="mov()" value="MOV">
-                <input type="button" onclick="xchg()" value="XCHG">
+            </div>
+            <h3>2. Zaznacz interesujące Cię rejestry</h3>
+            <div id="second_container">
+                <table>
+                    <tr>
+                        <td class="table_1">
+                            <p><input type="radio" name="register1" value="rax1" id="rax1"> <span>AX</span> <input type="radio" name="register1" value="rah1" id="rah1"> <span>AH</span> <input type="radio" name="register1" value="ral1" id="ral1"> <span>AL</span></p>    
+                            <p><input type="radio" name="register1" value="rbx1" id="rbx1"> <span>BX</span> <input type="radio" name="register1" value="rbh1" id="rbh1"> <span>BH</span> <input type="radio" name="register1" value="rbl1" id="rbl1"> <span>BL</span></p>
+                            <p><input type="radio" name="register1" value="rcx1" id="rcx1"> <span>CX</span> <input type="radio" name="register1" value="rch1" id="rch1"> <span>CH</span> <input type="radio" name="register1" value="rcl1" id="rcl1"> <span>CL</span></p>
+                            <p><input type="radio" name="register1" value="rdx1" id="rdx1"> <span>DX</span> <input type="radio" name="register1" value="rdh1" id="rdh1"> <span>DH</span> <input type="radio" name="register1" value="rdl1" id="rdl1"> <span>DL</span></p>
+                        </td>
+                        <td class="table_1">
+                            <p><input type="radio" name="register2" value="rax2" id="rax2"> <span>AX</span> <input type="radio" name="register2" value="rah2" id="rah2"> <span>AH</span> <input type="radio" name="register2" value="ral2" id="ral2"> <span>AL</span></p>
+                            <p><input type="radio" name="register2" value="rbx2" id="rbx2"> <span>BX</span> <input type="radio" name="register2" value="rbh2" id="rbh2"> <span>BH</span> <input type="radio" name="register2" value="rbl2" id="rbl2"> <span>BL</span></p>
+                            <p><input type="radio" name="register2" value="rcx2" id="rcx2"> <span>CX</span> <input type="radio" name="register2" value="rch2" id="rch2"> <span>CH</span> <input type="radio" name="register2" value="rcl2" id="rcl2"> <span>CL</span></p>
+                            <p><input type="radio" name="register2" value="rdx2" id="rdx2"> <span>DX</span> <input type="radio" name="register2" value="rdh2" id="rdh2"> <span>DH</span> <input type="radio" name="register2" value="rdl2" id="rdl2"> <span>DL</span></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <h3>3. Wybierz operację</h3>
+            <div id="third_container">
+                <input type="button" onclick="random_variables()" value="rand" class="button_" id="button1">
+                <input type="button" onclick="zero()" value="zerowanie" class="button_" id="button2">
+                <input type="button" onclick="mov()" value="MOV" class="button_" id="button3">
+                <input type="button" onclick="xchg()" value="XCHG" class="button_" id="button4">
+            </div>
                 
         <script src="js.js"></script>
         <script src="move_function.js"></script>
         <script src="exchange_function.js"></script>
+        <br>
         <hr>
     </body>
 </html>

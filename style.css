@@ -9,14 +9,63 @@ body{
 
 .bigger_input{
     width: 75px;
-    background-color: lightskyblue;
+    background-color: grey;
 }
 
 .smaller_input{
     width: 50px;
-    background-color: lightblue;
+    background-color: lightgray;
 }
 
 .table_1{
     padding: 15px;
+    background-color: orange;
+    border-radius: 10px;
+}
+
+#first_container{
+    background-color: orange;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px 60px;
+    border: solid lightgrey 2px;
+}
+
+#second_container{
+    background-color: grey;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px 60px;
+    border: solid lightgrey 2px;
+}
+
+#third_container{
+    background-color: orange;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px 60px;
+    border: solid lightgrey 2px;
+}
+
+.button_{
+    background-color: grey;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid lightgrey 2px;
+}
+
+#button1:hover{
+    background-color: lightgrey;
+}
+
+#button2:hover{
+    background-color: lightgrey;
+}
+
+#button3:hover{
+    background-color: lightgrey;
+}
+
+#button4:hover{
+    background-color: lightgrey;
 }
