@@ -62,4 +62,12 @@ function random_variables(){
     document.getElementById("dx").value = document.getElementById("dh").value + document.getElementById("dl").value;
 }
 
+function zero_memory(){
+    document.getElementById("si").value = "0000";
+    document.getElementById("di").value = "0000";
+    document.getElementById("bp").value = "0000";
+
+}
+
 zero();
+zero_memory();

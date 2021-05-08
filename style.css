@@ -47,6 +47,22 @@ body{
     border: solid lightgrey 2px;
 }
 
+#fourth_container{
+    background-color: orange;
+    padding: 20px;
+    width: 500px;
+    border-radius: 10px 60px;
+    border: solid lightgrey 2px;
+}
+
+#fifth_container{
+    background-color: grey;
+    padding: 20px;
+    width: 700px;
+    border-radius: 10px 60px;
+    border: solid lightgrey 2px;
+}
+
 .button_{
     background-color: grey;
     padding: 10px;
@@ -68,4 +84,10 @@ body{
 
 #button4:hover{
     background-color: lightgrey;
+}
+
+#disp1{
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 10px;
 }

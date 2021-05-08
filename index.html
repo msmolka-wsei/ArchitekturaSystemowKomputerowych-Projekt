@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Projekt</title>
+        <title>Projekt symulacji pracy procesora Intel 8086</title>
         <meta charset="utf-8">
+        <meta name="author" content="Michał Smółka">
+        <meta name="description" content="Projekt symulacji pracy procesora na ocenę 3.5. Poniżej w kodzie znajduje się mały bonusik.">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <hr>
+            <h2><b>Operacje na rejestrach</b></h2>
+            <hr>
+            <br>
             <h3>1. Wpisz wartości rejestrów</h3>
             <div id="first_container">
                 <p><span>AX</span> <input type="text" name="ax" id="ax" class="bigger_input hex" onblur="duplicate2()">   <span>AH</span> <input type="text" name="ah" id="ah" class="smaller_input hex" onblur="duplicate()">   <span>AL</span> <input type="text" name="al" id="al" class="smaller_input hex" onblur="duplicate()"></p>
@@ -42,10 +47,68 @@
                 <input type="button" onclick="xchg()" value="XCHG" class="button_" id="button4">
             </div>
                 
+        
+        <br>
+        <hr>
+<!-- Panie Profesorze, próbowałem zrobić operację na rejestrach i pamięci, jednak nie do końca się udało :( Ku pamięci poświęconego czasu postanowiłem wykomentować mój kod, zamiast go usuwać :)         
+    
+    <h2><b>Operacje na rejestrach i pamięci</b></h2>
+        <hr>
+        <br>
+        <h3>1. Wpisz wartości</h3>
+        <div id="fourth_container">
+            <p><span>SI</span> <input type="text" name="si" id="si" class="bigger_input hex"></p>
+            <p><span>DI</span> <input type="text" name="di" id="di" class="bigger_input hex"></p>
+            <p><span>BP</span> <input type="text" name="bp" id="bp" class="bigger_input hex"></p>
+            
+            <div id="disp1"><p><span>DISP</span> <input type="text" name="dips" id="disp" class="bigger_input hex"> (Ostani bajt pamięci)</p></div>
+        </div>
+        <h3>2. Zaznacz interesujące Cię opcje</h3>
+        <div id="fifth_container">
+            <table>
+                <tr>
+                    <td class="table_1">
+                        <p><input type="radio" name="register3" value="zrdp" id="zrdp"> <span>z rejestru do pamięci</span></p>    
+                        <p><input type="radio" name="register3" value="zpdr" id="zpdr"> <span>z pamięci do rejestru</span></p>
+                    </td>
+                    <td class="table_1">
+                        <p style="text-align: left;"><input type="radio" name="register4" value="i" id="i"> <span>indexowy</span> </p>
+                        <p style="text-align: left;"><input type="radio" name="register4" value="b" id="b"> <span>bazowy</span> </p>
+                        <p style="text-align: left;"><input type="radio" name="register4" value="ib" id="ib"> <span>indeksowo-bazowy</span> </p>   
+                    </td>
+                    <td class="table_1">
+                        <p><input type="radio" name="register5" value="rsi1" id="rsi1"> <span>SI</span></p>    
+                        <p><input type="radio" name="register5" value="rdi1" id="rdi1"> <span>DI</span></p>
+                    </td>
+                    <td class="table_1">
+                        <p><input type="radio" name="register6" value="rbx_x" id="rbx_x"> <span>BX</span></p>    
+                        <p><input type="radio" name="register6" value="rbp1" id="rbp1"> <span>BP</span></p>
+                    </td>
+                    <td class="table_1">
+                        <p><input type="radio" name="register7" value="siibx" id="siibx"> <span>SI i BX</span></p>    
+                        <p><input type="radio" name="register7" value="diibx" id="diibx"> <span>DI i BX</span></p>
+                        <p><input type="radio" name="register7" value="siibp" id="siibp"> <span>SI i BP</span></p>    
+                        <p><input type="radio" name="register7" value="diibp" id="diibp"> <span>DI i BP</span></p>
+                    </td>
+                    <td class="table_1">
+                        <p><input type="radio" name="register8" value="rax_2" id="rax_2"> <span>AX</span></p>    
+                        <p><input type="radio" name="register8" value="rbx_2" id="rbx_2"> <span>BX</span></p> 
+                        <p><input type="radio" name="register8" value="rcx_2" id="rcx_2"> <span>CX</span></p>  
+                        <p><input type="radio" name="register8" value="rdx_2" id="rdx_2"> <span>DX</span></p> 
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h3>3. Wybierz operację</h3>
+        <div id="third_container">
+            <input type="button" onclick="zero_memory()" value="zerowanie" class="button_" id="button2">
+            <input type="button" onclick="move_memory(memory_tab)" value="MOV" class="button_" id="button3">
+            <input type="button" onclick="xchg()" value="XCHG" class="button_" id="button4">
+        </div>
+    -->
         <script src="js.js"></script>
         <script src="move_function.js"></script>
         <script src="exchange_function.js"></script>
-        <br>
-        <hr>
+        <!--<script src="array.js"></script>-->
     </body>
 </html>
